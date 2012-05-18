@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="horizontal" android:paddingBottom="35dip"
+	android:paddingLeft="10dip" android:minWidth="200dip" android:id="@+id/balloon_main_layout"
+	android:paddingRight="10dip" android:paddingTop="10dip"
+	android:background="@drawable/balloon_overlay_bg_selector">
+
+	<RelativeLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:layout_weight="1" android:id="@+id/balloon_inner_layout">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/customeLinearLayout"
+			android:orientation="vertical">
+			<ImageView android:id="@+id/customImageView" android:layout_height="30dp"
+				android:layout_width="30dp" android:layout_margin="3dp"
+				android:layout_gravity="top|center_horizontal" android:src="@color/GRAY_BGCOLOR"></ImageView>
+			<Button android:id="@+id/callButton" android:background="@drawable/call_button"
+				android:layout_height="30dp" android:layout_width="30dp"
+				android:layout_gravity="bottom|center_horizontal"></Button>
+		</LinearLayout>
+		<TextView android:id="@+id/titleTextView" android:text="Historical Society of Old Newbury"
+			android:textColor="@color/BLACK_TEXTCOLOR" android:textSize="16dp"
+			android:textStyle="bold" android:layout_width="wrap_content"
+			android:layout_marginBottom="3dp" android:layout_marginLeft="3dp"
+			android:layout_toRightOf="@+id/customeLinearLayout"
+			android:layout_height="wrap_content"></TextView>
+		<TextView android:layout_width="wrap_content"
+			android:layout_below="@+id/titleTextView" android:layout_alignLeft="@+id/titleTextView"
+			android:layout_alignRight="@+id/titleTextView" android:id="@+id/subtitleTextView"
+			android:text="Tours and Information" android:textColor="@color/BLACK_TEXTCOLOR"
+			android:textSize="14dp" android:layout_height="wrap_content"></TextView>
+	</RelativeLayout>
+	<Button android:layout_height="30dp" android:background="@drawable/arrow_button"
+		android:layout_width="30dp" android:id="@+id/infoButton"
+		android:layout_gravity="center_vertical"></Button>
+
+</LinearLayout>

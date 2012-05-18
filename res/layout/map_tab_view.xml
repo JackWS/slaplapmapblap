@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<FrameLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/contentFrameLayout"
+		android:layout_weight="1" android:background="@color/WHITE_BGCOLOR">
+		<com.google.android.maps.MapView
+			android:layout_width="fill_parent" android:apiKey="0hjciOmix0V7FBKwnWzqPbR9tRZYAfoDh7aF2Hw"
+			android:id="@+id/mapView" android:layout_weight="1"
+			android:clickable="true" android:layout_height="fill_parent" />
+	</FrameLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/toolbarLinearLayout" android:background="@drawable/tab_bg"
+		android:padding="5dp" android:layout_height="50dp">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:layout_weight="1"></LinearLayout>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/tab_ic_001"
+			android:id="@+id/dinningButton"></Button>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:layout_weight="1"></LinearLayout>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/tab_ic_002"
+			android:id="@+id/attractionsButton"></Button>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:layout_weight="1"></LinearLayout>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/tab_ic_003"
+			android:id="@+id/shoppingButton"></Button>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:layout_weight="1"></LinearLayout>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/tab_ic_004"
+			android:id="@+id/listviewButton"></Button>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:layout_weight="1"></LinearLayout>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/tab_ic_005"
+			android:id="@+id/aboutButton"></Button>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:layout_weight="1"></LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BlisdMapKit</string>
+    <string name="Other_Window">Other Window</string>
+    <string name="Map">Map</string>
+    <string name="Please_waiting_">Please waiting ...</string>
+    <string name="Back">Back</string>
+    <string name="Detail">Detail</string>
+    <string name="Locations">Locations</string>
+    <string name="About">About</string>
+    <string name="Get_Direction">Get Direction</string>
+    <string name="JSONFeedURL"></string>
+    <string name="ReadFrequency">0</string>
+</resources>
+<!--
+
+LocationTypes are not hard coded - they must be LocationType1, LocationType2, etc.
+And PinColor references to those location types should be LocationPinColor1,2, 3
+
+Look at how BIng has constants for more guidance on this.  The logic should reflect the constants.
+
+-->
+

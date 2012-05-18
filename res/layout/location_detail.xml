@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/topbarRelativeLayout"
+		android:background="@drawable/tab_bg" android:padding="5dp">
+		<Button android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/backButton"
+			android:background="@drawable/c_title_back" android:textColor="@color/WHITE_TEXTCOLOR"
+			android:textSize="14dp" android:textStyle="bold" android:paddingLeft="5dp"
+			android:text="@string/Map" android:layout_centerVertical="true"></Button>
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/titleTextView"
+			android:layout_centerInParent="true" android:text="@string/Detail"
+			android:textColor="@color/WHITE_TEXTCOLOR" android:textStyle="bold"
+			android:textSize="22dp"></TextView>
+	</RelativeLayout>
+	<ScrollView android:layout_width="fill_parent" android:id="@+id/contentScrollView"
+		android:layout_height="fill_parent" android:background="@color/WHITE_BGCOLOR">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:id="@+id/contentRelativeLayout" android:layout_height="fill_parent"
+			android:padding="10dp">
+			<com.google.android.maps.MapView
+				android:layout_width="fill_parent" android:apiKey="0hjciOmix0V7FBKwnWzqPbR9tRZYAfoDh7aF2Hw"
+				android:id="@+id/mapView" android:clickable="true" android:layout_height="250dp"/>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_below="@+id/mapView"
+				android:layout_alignLeft="@+id/mapView" android:layout_alignRight="@+id/mapView"
+				android:id="@+id/nameTextView" android:text="Souffles"
+				android:textColor="@color/BLACK_TEXTCOLOR" android:textSize="18dp"
+				android:layout_marginTop="5dp"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_below="@+id/nameTextView"
+				android:layout_alignLeft="@+id/nameTextView"
+				android:layout_alignRight="@+id/nameTextView" android:id="@+id/descriptionTextView"
+				android:text="We offer a wide variety of kitchen essentials, including professional-level cookware and a vast array of gadgets and tools."
+				android:textColor="@color/BLACK_TEXTCOLOR" android:textSize="14dp"
+				android:layout_marginTop="3dp"></TextView>
+			<TextView android:layout_height="wrap_content" android:id="@+id/addressTextView"
+				android:textColor="@color/BLACK_TEXTCOLOR" android:text="14 Market Square, Newburyport, MA 01950, USA"
+				android:layout_width="wrap_content" android:layout_below="@+id/descriptionTextView"
+				android:layout_alignLeft="@+id/descriptionTextView"
+				android:layout_alignRight="@+id/descriptionTextView"
+				android:layout_marginRight="150dp" android:textSize="16dp"
+				android:layout_marginTop="3dp"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:layout_below="@+id/addressTextView"
+				android:layout_alignLeft="@+id/addressTextView"
+				android:layout_alignRight="@+id/addressTextView"
+				android:layout_marginTop="3dp" android:id="@+id/phoneTextView"
+				android:text="978-465-1523" android:autoLink="phone"></TextView>
+			<Button android:layout_height="wrap_content"
+				android:layout_alignParentRight="true" android:layout_width="wrap_content"
+				android:id="@+id/directionButton" android:text="@string/Get_Direction"
+				android:layout_alignBottom="@+id/phoneTextView"></Button>
+		</RelativeLayout>
+	</ScrollView>
+</LinearLayout>

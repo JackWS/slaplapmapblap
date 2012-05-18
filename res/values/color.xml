@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="WHITE_TEXTCOLOR">#FFFFFF</color>
+ <color name="BLACK_TEXTCOLOR">#000000</color>
+ <color name="BLACK_BGCOLOR">#000000</color>
+ <color name="BLUE_TEXTCOLOR">#0170BF</color>
+ <color name="GRAY_TEXTCOLOR">#4C566C</color>
+ <color name="GRAY_BGCOLOR">#ABABAB</color>
+ <color name="WHITE_BGCOLOR">#FFFFFF</color>
+ <color name="ORANGE_BGCOLOR">#F6A700</color>
+</resources>
